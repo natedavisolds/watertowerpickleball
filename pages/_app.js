@@ -1,3 +1,5 @@
+import 'components/site.scss'
+
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
