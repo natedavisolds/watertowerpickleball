@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Aileron Black';
+  src: url('Aileron-Black.otf');
+  src: url('Aileron-Black.eot?#iefix') format('embedded-opentype'), url('Aileron-Black.woff2') format('woff2'), url('Aileron-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
