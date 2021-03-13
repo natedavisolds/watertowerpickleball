@@ -41,10 +41,9 @@ export default function PayDues({stripeSessionId}) {
         </ul>
 
         <p>
-          <a href="https://www.meetup.com/Water-Tower-Pickleball/" role="link" className="btn btn-inverted">Pay on Meetup</a>{' '}
           <button role="link" className="btn btn-inverted" onClick={redirectToStripe}>Pay on Stripe</button>
         </p>
-        <p>Note: you only need to pay on once per year.  If you have already paid, contact us and we will set it straight.</p>
+        <p>Note: you only need to pay on once per year.  If your meetup profile says Paid then you don't need to pay here. If you have already paid, contact us and we will set it straight.</p>
       </section>
     </Layout> 
   );
