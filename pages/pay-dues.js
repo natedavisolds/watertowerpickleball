@@ -57,7 +57,12 @@ function Button({children,inverted=false}) {
 }
 
 export async function getServerSideProps(context) {
-  const hostname = context.headers.host
+  const hostname = context?.req?.headers?.host
+
+  if (hostname === undefined) { return }
+   
+  const protocal = hostname.includes("localhost") ? `http://` : `https://`
+
   const stripePublicKey = process.env.STRIPE_KEY
 
   const stripe = require('stripe')(stripePublicKey) 
@@ -77,8 +82,8 @@ export async function getServerSideProps(context) {
       },
     ],
     mode: 'payment',
-    success_url: `${hostname}/dues-paid`,
-    cancel_url: `${hostname}/dues-unpaid`,
+    success_url: `${protocal}${hostname}/dues-paid`,
+    cancel_url: `${protocal}${hostname}/dues-unpaid`,
   });
 
   // Pass data to the page via props
