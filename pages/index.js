@@ -1,48 +1,33 @@
 import React, {useEffect, useState} from 'react';
 import Layout from "components/Layout"
+import Link from "next/link"
 
 export default function Home() {
   return (
-    <Layout fullCourt>
-      <section>
-        <h1 className="page-title">The Public Pickleball Courts in Northwest Philadelphia</h1>
-
-        <div className="actions">
-          <Button url="/directions">Get Directions</Button>
-        </div>
-      </section>
-
-      <section>
-        <LearnMeetCompete />        
-      </section>
-
-      <section className="nvz">
-        <h2>What to expect?</h2>
-        <p>There are lots of players at Water Tower wanting to play, so court availability is limited.  To keep the flow going and to vary types of play we’ve designed the Next to Play and Special Formats systems.</p>
-        
-        <div className="actions">
-          <Button url="/playing">Learn more about playing</Button>
-        </div>
-      </section>
-      <section className="nvz">
-        <h2>When to Play?</h2>
-        <p>Play anytime.  The courts are permanent and the lights allow play to continue most nights.  Check the schedule for activities that match you best.  </p>
-        
-        <div className="actions">
-          <Button url="/schedule">Check Schedule</Button>
-        </div>
-      </section>
-      <section></section>
-      <section></section>
-      
+    <Layout isModal>
+      <PayDues />
     </Layout> 
   );
 }
 
-
-function Button({children}) {
+function PayDues() {
   return(
-    <button className="btn">{children}</button>
+    <section className="pay-dues">
+      <header>
+        <div>Learn, meet, and compete with other pickleball players in Northwest Philadelphia.</div>
+      </header>
+
+      <div className="actions as-centered">
+        <a href="https://www.meetup.com/Water-Tower-Pickleball/" className="btn btn-inverted">Join Meetup</a>
+        <Link href="/pay-dues"><a className="btn btn-inverted">Pay Dues</a></Link>
+      </div>
+    </section>
+  )
+}
+
+function Button({children,inverted=false}) {
+  return(
+    <button className={`btn ${inverted ? 'btn-inverted' : ''}`}>{children}</button>
   )
 }
 

@@ -55,6 +55,10 @@ body {
   border: .5rem solid $color-lines;
   max-width: 1240px;
 
+  &.modal {
+    max-width: 600px;
+  }
+
   @media screen and (min-width: 760px) {
     margin: 2rem;
   }
@@ -124,6 +128,34 @@ body {
   }
 }
 
+main.modal {
+  background-color: $color-lines;
+}
+
+.pay-dues {
+  padding: 1rem;
+  display: grid;
+  grid: center center;
+
+  header {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em
+  }
+
+  .actions {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
 .full-court {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -168,8 +200,6 @@ body {
   }
 }
 
-
-
 .btn {
   padding: .5em 2em;
   border: 6px solid $color-lines;
@@ -178,6 +208,19 @@ body {
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: bold;
+  cursor: pointer;
+
+  &.btn-inverted {
+    border: 6px solid $color-inplay;
+    background-color: $color-lines;
+    color: $color-inplay;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $color-inplay;
+      color: $color-lines;
+    }
+  }
 }
 
 .actions {
@@ -352,8 +395,6 @@ body {
   strong {
     color: $color-bold;
   }
-
-  
 
   h1, h2, h3, h4, h5, h6 {
     margin-top: 2em;
