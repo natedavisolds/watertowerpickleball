@@ -28,21 +28,20 @@ export default function PayDues({stripeSessionId}) {
           <div>Your membership dues are crucial to pickleball at Water Tower.</div>
         </header>
 
-        <p>Annual dues enable pickleball events, court improvements, and unified advocasy. We use the funds to:</p>
+        <p>Annual dues enable pickleball events, court improvements, and unified advocacy. We use the funds to:</p>
 
         <ul>
           <li>Install paddle racks for next to play system,</li>
           <li>Donate to Water Tower Advisory Board for facility upkeep,</li>
-          <li>Buy equiptment, like temporary nets,</li>
-          <li>Purchase Liability Insurance,</li>
-          <li>Costs associated with securing permits, like liability insurance,</li>
+          <li>Buy equipment (like temporary nets),</li>
+          <li>Costs associated with securing permits (like liability insurance),</li>
           <li>And much more.</li>
         </ul>
 
         <p>
           <button role="link" className="btn btn-inverted" onClick={redirectToStripe}>Pay on Stripe</button>
         </p>
-        <p>Note: you only need to pay on once per year.  If your meetup profile says Paid then you don't need to pay here. If you have already paid, contact us and we will set it straight.</p>
+        <p>Note: you only need to pay once per year.  If your meetup profile says 'Paid until Dec 31, 2021' then you don't need to pay here. If you have already paid, contact us and we will set it straight.</p>
       </section>
     </Layout> 
   );
