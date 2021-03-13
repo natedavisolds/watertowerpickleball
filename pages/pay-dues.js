@@ -10,7 +10,6 @@ export default function PayDues({stripeSessionId}) {
   const [error, setError] = React.useState()
 
   const redirectToStripe = async (event) => {
-    
     const stripe = await stripePromise;
     const result = await stripe.redirectToCheckout({
       sessionId: stripeSessionId,
@@ -47,12 +46,6 @@ export default function PayDues({stripeSessionId}) {
       </section>
     </Layout> 
   );
-}
-
-function Button({children,inverted=false}) {
-  return(
-    <button className={`btn ${inverted ? 'btn-inverted' : ''}`}>{children}</button>
-  )
 }
 
 export async function getServerSideProps(context) {

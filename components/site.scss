@@ -53,7 +53,7 @@ body {
 .site-wrap {
   margin: 0;
   border: .5rem solid $color-lines;
-  max-width: 1240px;
+  max-width: 960px;
 
   &.modal {
     max-width: 600px;
@@ -63,7 +63,7 @@ body {
     margin: 2rem;
   }
 
-  @media screen and (min-width: 1240px) {
+  @media screen and (min-width: 960px) {
     margin-right: auto;
     margin-left: auto;
   }
@@ -121,10 +121,14 @@ body {
   @media screen and (min-width: $breakpoint-md) {
     display: grid;
     grid-template-columns: 1fr minmax(auto,30ch);
-    grid-template-rows: 150px 150px auto;
+    grid-template-rows: 200px 200px auto;
     gap: 6px;
     max-width: $breakpoint-xl;
     background-color: $color-lines;
+  }
+
+  article {
+    padding-top: 3rem;
   }
 }
 
@@ -240,6 +244,7 @@ main.modal {
 }
 
 .toc {
+  display: none;
   position: sticky;
   top: 100px;
   padding-left: 0;
@@ -289,17 +294,27 @@ main.modal {
 .main-header {
   grid-column: 1 / 1;
   background-color: $color-inplay;
-  padding: 2rem;
-  min-height: 150px;
+  padding: 3rem 2rem 2rem 2rem;
+  min-height: 200px;
+  
+  
+
+  p {
+    color: $color-lines;
+    max-width: 60ch;
+    font-size: 1.5em;
+    margin-top: 0;
+  }
 }
 
 .page-title {
   font-size: 3rem;
   font-style: semibold;
+  font-weight: 700;
   max-width: 30ch;
   color: $color-lines;
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: .5rem;
 }
 
 .section-nav {

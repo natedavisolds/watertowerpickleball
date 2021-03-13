@@ -5,12 +5,13 @@ export default function NextToPlay() {
     <Layout title="Next to Play" reader>
       <header className="main-header">
         <div className="page-title">Playing at Water Tower</div>
+        <p>What to expect when playing pickleball at Water Tower.</p>
       </header>
 
-      <nav className="section-nav"><img src="/images/wt-courts-overview.jpg" /></nav>
+      <nav className="section-nav"></nav>
       
       <div className="hero-image">
-        
+        <img src="/images/wt-courts-overview.jpg" />
       </div>
       
       <aside className="cositentent-sidebar">
@@ -43,7 +44,7 @@ export default function NextToPlay() {
       </aside>
 
       <article className="article">
-        <p id="intro">
+        <p>
           When courts get crowded, tensions rise. People want to play as much
           as possible but without a system in place, players make up their own
           rules and stake claim to courts that should be public.
