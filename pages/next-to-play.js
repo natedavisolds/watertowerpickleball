@@ -309,7 +309,7 @@ export default function NextToPlay() {
         <h5 id="by-group">Skill, Age, and/or Gender Open Play</h5>
         <p>
           This format uses the same rules as <strong>Next to Play</strong> but
-          you must qualify to play. For example, “Ladies night” will be for
+          you must qualify to play. For example, "Women's night” will be for
           women only. Or 3.5 over 60 could be for those at the 3.5 level and
           have an age over 60. These formats will likely be on a rotation
           where the most popular happen more frequently.
