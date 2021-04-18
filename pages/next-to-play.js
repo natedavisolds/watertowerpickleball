@@ -14,35 +14,6 @@ export default function NextToPlay() {
         <img src="/images/wt-courts-overview.jpg" />
       </div>
       
-      <aside className="cositentent-sidebar">
-        <ul className="toc">
-          <li className="toc-level2"><a href="#intro">Introduction</a></li>
-          <li className="toc-level3"><a href="#system">System Objectives</a></li>
-          <li className="toc-level2"><a href="#designated-court-use">Designated Court Use</a></li>
-          <li className="toc-level3"><a href="#next-to-play">Next to Play</a></li>
-          <li className="toc-level4"><a href="#how-system-works">How the Next to Play system works</a></li>
-
-          <li className="toc-level4"><a href="#faqs">Frequently Asked Questions</a></li>
-
-          <li className="toc-level5"><a href="#not-enough-players">What if the court opens up and the next group doesn’t have four
-          players?</a></li>
-          <li className="toc-level5"><a href="#what-if-rematch">What if I want to have a rematch?</a></li>
-          <li className="toc-level5"><a href="#what-if-mix-up">What if I don’t want to play with the same players again?</a></li>
-          <li className="toc-level5"><a href="#what-no-space-on-rack">What happens if there isn’t space on the next-to-play rack?</a></li>
-          <li className="toc-level3"><a href="#special-formats">Special Formats</a></li>
-          <li className="toc-level4"><a href="#typesofspecialformats">Types of <strong>Special 
-            Formats</strong></a></li>
-          <li className="toc-level5"><a href="#round-robin">Round Robin</a></li>
-          <li className="toc-level5"><a href="#ladder">Ladder</a></li> 
-          <li className="toc-level5"><a href="#luck-of-the-draw">Luck of the Draw</a></li> 
-          <li className="toc-level5"><a href="#challenge-court">Challenge Court</a></li> 
-          <li className="toc-level5"><a href="#double-elimination">Double Elimination</a></li> 
-          <li className="toc-level5"><a href="#leagues">Leagues</a></li> 
-          <li className="toc-level5"><a href="#by-group">Skill, Age, and/or Gender Open Play</a></li> 
-          <li className="toc-level5"><a href="#reserved-courts">Reserved Courts</a></li>           
-        </ul>
-      </aside>
-
       <article className="article">
         <p>
           When courts get crowded, tensions rise. People want to play as much
