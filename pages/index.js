@@ -19,7 +19,6 @@ function PayDues() {
 
       <div className="actions as-centered">
         <a href="https://www.meetup.com/Water-Tower-Pickleball/" className="btn btn-inverted">Join Meetup</a>
-        <Link href="/pay-dues"><a className="btn btn-inverted">Pay Dues</a></Link>
       </div>
     </section>
   )
